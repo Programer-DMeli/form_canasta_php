@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo</title>
+    <link rel="stylesheet" href="canasta.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sorteo de canastas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="formulario">
+            <form action="registrar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+                <label for="apellido"> Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingresa tu apellido" required>
+                <label for="correo">Correo Electronico</label>
+                <input type="email" name="correo" placeholder="Ingresa tu apellido" required>
+                <label for="celular">Celular</label>
+                <input type="number" name="celular" required>
+                <br>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" value="Masculino"> Masculino
+                <input type="radio" name="sexo" value="Femenino"> Femenino
+                <input type="radio" name="sexo" value="Otro">Otro
+                <br>
+                <label for="comentario">Comentario:</label>
+                <br>
+                <textarea name="comentario" id=""></textarea>
+                <div class="botones">
+                    <button type="submit" name="btnenviar">Enviar</button>
+                    <button type="reset"    name="btnlimpiar">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
