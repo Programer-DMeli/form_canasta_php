@@ -2,6 +2,8 @@
     include('conexion.php');
    error_reporting(E_ALL);  //CONTROLA ERRORES 
    ini_set('display_errors', '1');
+   <!-- Se verifica si el formulario ha sido enviado mediante el método POST -->   
+   
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $nombre =  trim($_POST['nombre']);
